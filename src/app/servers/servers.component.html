@@ -1,0 +1,7 @@
+<button [disabled]="!allowNewServer" (click)="onCreateServer()">
+  Create Server
+</button>
+<p [innerText]="allowNewServer"></p>
+<p>{{ serverCreateStatus }}</p>
+<input type="text" [(ngModel)]="binding" />
+<p>{{ binding }}</p>
