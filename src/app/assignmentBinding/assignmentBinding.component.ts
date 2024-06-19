@@ -14,7 +14,9 @@ export class AssignmentBinding {
   onInputChange() {
     if (this.binding.length > 0) {
       this.btnEnabled = false;
-    } else this.btnEnabled = true;
+    } else if (this.binding.length < 0) {
+      this.btnEnabled = true;
+    }
   }
 
   onClearText() {
