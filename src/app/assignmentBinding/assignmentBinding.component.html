@@ -1,0 +1,4 @@
+<label for="inputText">Enter some text: </label>
+<input type="text" id="inputText" [(ngModel)]="binding" />
+<button (click)="onClearText()">Clear</button>
+<p>{{ binding }}</p>
