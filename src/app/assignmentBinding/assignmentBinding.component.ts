@@ -8,7 +8,15 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './assignmentBinding.component.html',
 })
 export class AssignmentBinding {
+  btnEnabled: boolean = true;
   binding: string = '';
+
+  onInputChange() {
+    if (this.binding.length > 0) {
+      this.btnEnabled = false;
+    } else this.btnEnabled = true;
+  }
+
   onClearText() {
     return (this.binding = '');
   }
