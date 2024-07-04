@@ -1,10 +1,21 @@
-<button (click)="onToggleVisibility()">Display Details</button>
+<!-- <button (click)="onToggleVisibility()">Add item</button>
 <p [style.visibility]="visibilityStatus">
-  message {{ incrementMessage }} in a bottle
+  Item {{ incrementMessage }} has been added to list.
+</p>
+<div *ngIf="logCounter.length > 0"></div>
+<p *ngFor="let count of logCounter">
+  Log output: {{ count }} and timestamp: {{ logTime[count] }}
 </p>
 
-<div **ngIf="logCounter.length > 0">
-  <p **ngFor="let count of logCounter; let i = index">
-    Log output: {{ count }} and timestamp: {{ logTime[i] }}
-  </p>
+<ol>
+  <li></li>
+</ol> -->
+<label for="itemName">Please enter a name of item: </label>
+<input type="text" id="itemName" />
+<button>Enter</button>
+<div>
+  <p></p>
 </div>
+<ol>
+  <li></li>
+</ol>
